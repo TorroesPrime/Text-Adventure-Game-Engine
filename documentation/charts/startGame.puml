@@ -1,0 +1,27 @@
+@startuml
+
+:"Lets start a new adventure";
+:"List the availible adventure modules";
+:<user selects adventure to start>;
+:read file associated with selected adventure;
+:create gameState;
+:creates items listed in adventure file;
+:add items to gameState's items;
+:creates skills listed in adventure file;
+:add skills to gameState's listOfSkills;
+:creates talents listed in adventure file;
+:add talents to gameState's listOfTalents;
+:creates characters listed in adventure file;
+:add talents to gameState's listOfcharacters;
+:creates dungeons listed in adventure file;
+:creates rooms listed in adventure file;
+:add rooms to dungeon's rooms;
+:add characters to each room as indicated in the .adv file;
+:creates exits listed in adventure file;
+:add exits to each exit's srcRooms;
+:move items from gameState's items to each room as indicated the .adv file;
+:set player character;
+:put player character in dungeon entry;
+:load interpreter;
+
+@enduml

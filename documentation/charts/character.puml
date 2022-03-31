@@ -1,0 +1,40 @@
+@startuml characterUML
+
+object character {
+    {field} fName
+    {field} lName
+    {field} characteristics
+    {field} charClass
+    {field} skills
+    {field} wounds
+    {field} fatique
+    {field} bodyParts
+    {field} expierencePoints
+    {field} bonuses 
+    {field} expierenceToSpend
+    {field} clothing
+    {field} armor 
+    {field} armaments 
+    {field} age 
+    {field} addinity
+}
+
+map characteristics {
+    "ballistic skill" => int
+    "weapon skill" => int
+    "strength" => int
+    "toughness" => int
+    "agility" => int
+    "intelligence" => int
+    "perception" => int
+    "Will Power" => int
+    "Fellowship" => int
+}
+map wounds {
+    "total wounds" => int
+    "current wounds" => int
+}
+character::characteristics --> characteristics
+character::wounds --> wounds
+
+@enduml

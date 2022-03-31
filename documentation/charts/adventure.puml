@@ -1,0 +1,46 @@
+@startuml adventureUML
+object adventure {
+    {field} fileName
+    {field} description
+    {field} name
+    {field} saveFileVersion
+}
+
+object gameState {
+    {field} saveFileVersion
+    {field} defaultSaveFileName
+    {field} dungeon
+    {field} playerCharacter
+    {field} adventurersCurrentRoom
+    {field} characters
+}
+object interpreter {
+    {field} commandCursor
+    {method} promptUser()
+    {method} interpreter()
+}
+object dungeon {
+    {field} saveFileVersion
+    {field} entry
+    {field} rooms
+    {field} characters
+    {field} items
+}
+object character
+object item
+object skill
+object talent
+object exit
+object room
+object inventory
+gameState "1"--|| adventure : has a >
+gameState "1"--|| dungeon : has a >
+dungeon --|{ room : has >
+room --|{ exit : has >
+room --o{ character : has >
+room --o{ item : has >
+gameState "1"--|| character : has a playerCharacter that is a >
+character ||--o{ skill : has >
+character ||--o{ talent : has >
+character "1" --|| inventory : has >
+@enduml
