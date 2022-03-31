@@ -13,13 +13,13 @@ technologies used:
 Main Documentation
 > Main documentation for the project.
 
-General Concepts
+[General Concepts](https://github.com/TorroesPrime/Text-Adventure-Game-Engine/blob/master/documentation/general%20concepts.md)
 > A listing of the general concepts in the project. Not a class/object list.
 
-Commands List
+[Commands List](https://github.com/TorroesPrime/Text-Adventure-Game-Engine/blob/master/documentation/commands.md)
 > A list of the commands that will be availible to use in the engine.
 
-Classes
+[Classes](https://github.com/TorroesPrime/Text-Adventure-Game-Engine/blob/master/documentation/class%20documentation.md)
 > documentation of the classes in the engine.
 
 
