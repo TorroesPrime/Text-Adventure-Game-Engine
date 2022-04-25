@@ -1,4 +1,5 @@
 # class documentation
+This is a list of 
 * [Interpreter](https://github.com/TorroesPrime/Text-Adventure-Game-Engine/blob/master/documentation/class%20documentation.md#interpreter)
 * dungeon
 * gameState
@@ -14,7 +15,7 @@
 
 
 ## Interpreter
-the means of interaction between the player and the game itself. The player enters command in a \[verb\]\[item\]\[modifier\]\[target\] syntax to the interpreter that then passes the string to the commandFactory.
+The primary means of interaction between the player and the game itself. The player enters command in a \[verb\]\[item\]\[modifier\]\[target\] syntax to the interpreter that then passes the string to the commandFactory.
 
 * #### verb 
 > this part of a command will tend to be an action of some sort. ‘talk to’ ‘take’ ‘move’ ‘examine’ etc.
@@ -93,7 +94,7 @@ the `>>>` is the commandCursor.
 ### methods
 * #### storeState
 > method to record the current gamestate to a save file.
-
+Below is a list of the various object types in the system. Click on a given name to be taken to a brief overview of the object. 
 * #### getAdventurersCurrentRoom
 > returns the room that the player character currently occupies.
 
