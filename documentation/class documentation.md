@@ -13,9 +13,6 @@ This is a list of
 * skill 
 * talent
 
-
-
-
 ---
 ## Interpreter
 The primary means of interaction between the player and the game itself. The player enters command in a \[verb\]\[item\]\[modifier\]\[target\] syntax to the interpreter that then passes the string to the commandFactory.
