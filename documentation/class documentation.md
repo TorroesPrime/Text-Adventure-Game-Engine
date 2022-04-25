@@ -14,6 +14,9 @@ This is a list of
 * talent
 
 
+
+
+---
 ## Interpreter
 The primary means of interaction between the player and the game itself. The player enters command in a \[verb\]\[item\]\[modifier\]\[target\] syntax to the interpreter that then passes the string to the commandFactory.
 
@@ -41,7 +44,13 @@ the `>>>` is the commandCursor.
 
 * #### interpreter
 > Primary interaction method. 
+---
 
+
+
+
+
+---
 ## dungeon
 > A dungeon is the 'map' or region that a given adventure occures in. A dungeon contains at least 1 room and a room that is designated as 'entry', where the player starts when they begin a new adventure.
 ### fields
@@ -66,6 +75,11 @@ the `>>>` is the commandCursor.
 * #### getRoom
 > returns a room object by searching for the name in the dungeon's rooms.
 
+
+
+
+
+---
 ## gameState
 > A gameState is created when the player begins a new play through of an adventure. It contains information about the file used for the adventure, the player character, the dungeon, the player's current room, and any other differences between the adventure file and the current state of a game.
 
@@ -105,38 +119,80 @@ Below is a list of the various object types in the system. Click on a given name
 > sets the playerCharacter for this gameState.
 
 
+
+
+---
 ## adventure
 ### fields
 ### methods
 
+
+
+
+---
 ## command
 ### fields
 ### methods
 
+
+
+
+---
 ## exit
 ### fields
 ### methods
 
+
+
+
+
+---
 ## room
 ### fields
 ### methods
 
+
+
+
+
+---
 ## character
 ### fields
 ### methods
 
+
+
+
+
+---
 ## item
 ### fields
 ### methods
 
+
+
+
+
+---
 ## weapon
 ### fields
 ### methods
 
+
+
+
+
+---
 ## skill
 ### fields
 ### methods
 
+
+
+
+
+---
 ## talent
 ### fields
 ### methods
+---
