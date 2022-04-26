@@ -30,7 +30,9 @@ Command is a parent class that the various individual types of command inherrit 
 
   1. look
       * allows the player to view the full description of the room they are currently standing in.
-` >>> look `
+```
+>>> look 
+```
 
   2. observe
       * allows the player to perform an ‘awareness’ check on the room they are currently standing. 
