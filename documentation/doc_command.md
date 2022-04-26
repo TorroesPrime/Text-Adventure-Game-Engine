@@ -14,23 +14,23 @@ Command is a parent class that the various individual types of command inherrit 
       * a string representing the test version of the command
   2. description
       * a string describing what the command is used for.
-  3. usage –
+  3. usage
       * a string demonstrating how to use the command
-  4. usageDetails –
+  4. usageDetails
       * a string describing possible variants or alternate uses of this command.
 
 ### methods
 
-  1. execute() –
+  1. execute()
       * abstract method
-  2. details(Self) –
+  2. details(Self)
       * returns a string that is combination of the commandName, description, or a combination of the commandName, description and usageDetails attributes. Used when reading the help command for a given command.
 
 ## List of Commands
 
   1. look
       * allows the player to view the full description of the room they are currently standing in.
-`>>> look`
+` >>> look `
 
   2. observe
       * allows the player to perform an ‘awareness’ check on the room they are currently standing. 
